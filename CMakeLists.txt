@@ -3,4 +3,9 @@ project(LorraX)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(LorraX main.cpp)
+set (ENGINE_SOURCES
+        2D
+        Base
+        )
+
+add_executable(LorraX ${ENGINE_SOURCES} main.cpp)
