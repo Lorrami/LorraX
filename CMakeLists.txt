@@ -4,8 +4,14 @@ project(LorraX)
 set(CMAKE_CXX_STANDARD 14)
 
 set (ENGINE_SOURCES
-        2D
-        Base
+        2D/Colors/Color.cpp
+        2D/Shapes/DefaultShape.cpp
+        2D/Shapes/CircleShape.cpp
+        2D/Shapes/RectangleShape.cpp
+        2D/Shapes/LineShape.cpp
+        Base/Math/Vector2f/Vector2f.cpp
+        Base/Tools/Clock/Clock.cpp
+        Base/Tools/DLog/IStringWriter.cpp
         )
 
 add_executable(LorraX ${ENGINE_SOURCES} main.cpp)
