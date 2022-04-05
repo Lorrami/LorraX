@@ -5,11 +5,11 @@
 
 struct DefaultShape
 {
-    Vector2f Position;
-    Color FillColor;
-    Vector2f Size;
-    Vector2f Origin;
-    float Rotation;
+    Vector2f Position {};
+    Color FillColor {};
+    Vector2f Size {};
+    Vector2f Origin {};
+    float Rotation {};
 
     virtual void FindIntersection(DefaultShape *Object) = 0;
 };
