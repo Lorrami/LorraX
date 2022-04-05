@@ -15,4 +15,12 @@ struct LineShape : public DefaultShape
 		this->Origin = Origin;
 		this->Rotation = Rotation;
 	}
+    Vector2f Position;
+    Color FillColor;
+    Vector2f Size;
+    Vector2f Origin;
+    float Rotation;
+
+    bool IsCrashed = false;
+    void FindIntersection(DefaultShape *Object) override;
 };
