@@ -2,8 +2,8 @@
 
 #include "DefaultShape.hpp"
 
-#include "../Packages/Vector2f.hpp"
-#include "../Packages/Color.hpp"
+#include "../../Base/Math/Vector2f/Vector2f.hpp"
+#include "../Colors/Color.hpp"
 
 struct LineShape : public DefaultShape
 {
