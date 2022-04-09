@@ -14,10 +14,8 @@ set (ENGINE_SOURCES
         Base/Containers/HashMap/HashMap.cpp
         Base/Containers/LinkedList/LinkedList.cpp
         Base/Containers/Vector/Vector.cpp
-        Base/Tools/DLog/IStringWriter.cpp
         Base/Tools/DLog/ConsoleStringWriter.cpp
         Base/Tools/DLog/FileStringWriter.cpp
-        Base/Tools/DLog/StringWriterFactory.cpp
-        Base/Tools/DLog/OutputType.cpp)
+        )
 
 add_executable(LorraX ${ENGINE_SOURCES} main.cpp)
