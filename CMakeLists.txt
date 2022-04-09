@@ -11,10 +11,13 @@ set (ENGINE_SOURCES
         2D/Shapes/LineShape.cpp
         Base/Math/Vector2f/Vector2f.cpp
         Base/Tools/Clock/Clock.cpp
-        Base/Tools/DLog/IStringWriter.cpp
         Base/Containers/HashMap/HashMap.cpp
         Base/Containers/LinkedList/LinkedList.cpp
         Base/Containers/Vector/Vector.cpp
-        )
+        Base/Tools/DLog/IStringWriter.cpp
+        Base/Tools/DLog/ConsoleStringWriter.cpp
+        Base/Tools/DLog/FileStringWriter.cpp
+        Base/Tools/DLog/StringWriterFactory.cpp
+        Base/Tools/DLog/OutputType.cpp)
 
 add_executable(LorraX ${ENGINE_SOURCES} main.cpp)

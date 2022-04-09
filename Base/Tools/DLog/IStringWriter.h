@@ -1,4 +1,8 @@
+#pragma once
+
+#include <iostream>
+
 class IStringWriter {
 public:
-    virtual void WriteString() = 0;
+    virtual void StringWriter(std::string text) = 0;
 };
