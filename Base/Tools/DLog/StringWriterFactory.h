@@ -18,5 +18,7 @@ std::unique_ptr<IStringWriter> StringWriterFactory::CreatWriter(OutputType type)
             return std::make_unique<ConsoleStringWriter>();
         case OutputType::File :
             return std::make_unique<FileStringWriter>();
+        default:
+            return std::make_unique<ConsoleStringWriter>();
     }
 }
