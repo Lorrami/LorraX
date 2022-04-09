@@ -12,6 +12,9 @@ set (ENGINE_SOURCES
         Base/Math/Vector2f/Vector2f.cpp
         Base/Tools/Clock/Clock.cpp
         Base/Tools/DLog/IStringWriter.cpp
+        Base/Containers/HashMap/HashMap.cpp
+        Base/Containers/LinkedList/LinkedList.cpp
+        Base/Containers/Vector/Vector.cpp
         )
 
 add_executable(LorraX ${ENGINE_SOURCES} main.cpp)
