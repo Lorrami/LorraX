@@ -23,5 +23,5 @@ public:
     float Rotation;
 
     bool IsCrashed = false;
-    void FindIntersection(DefaultShape *Object);
+    void FindIntersection(DefaultShape *Object) override;
 };
