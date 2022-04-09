@@ -26,10 +26,9 @@ int main() {
 
     writer->StringWriter("Writing the info(you're LorraX user, love you)\n");
 
-
     for (auto it : *players_list) {
         std::cout << it->Position.x << " " << it->Position.y << std::endl;
     }
 
-    return 0;
+    return 777;
 }
