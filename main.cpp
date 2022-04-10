@@ -5,8 +5,7 @@
 #include "Base/Containers/LinkedList/LinkedList.h"
 #include "Base/Tools/DLog/StringWriterFactory.h"
 
-class Player : public RectangleShape{
-public:
+struct Player : public RectangleShape{
     explicit Player(Vector2f position) {
         this->Position = position;
         this->FillColor = Color::Red;
