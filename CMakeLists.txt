@@ -16,6 +16,10 @@ set (ENGINE_SOURCES
         Base/Containers/Vector/Vector.cpp
         Base/Tools/DLog/ConsoleStringWriter.cpp
         Base/Tools/DLog/FileStringWriter.cpp
-        )
+        2D/RenderWindow/RenderWindow.cpp)
+
+add_subdirectory(2D/sources/glfw)
 
 add_executable(LorraX ${ENGINE_SOURCES} main.cpp)
+
+target_link_libraries(LorraX PUBLIC glfw opengl32)
