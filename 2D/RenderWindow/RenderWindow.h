@@ -12,9 +12,10 @@ public:
     ~RenderWindow();
 
     bool isOpen();
-    static void clear();
     void display();
-    void dispatchEvents();
+
+    static void clear();
+    static void dispatchEvents();
 
 };
 
